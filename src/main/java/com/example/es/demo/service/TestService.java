@@ -2,7 +2,6 @@ package com.example.es.demo.service;
 
 import io.searchbox.client.JestClient;
 import io.searchbox.client.JestClientFactory;
-import io.searchbox.core.Index;
 import io.searchbox.indices.template.GetTemplate;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
