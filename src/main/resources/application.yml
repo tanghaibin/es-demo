@@ -1,2 +1,22 @@
 server:
   port: 7070
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/reptiles?useUnicode=true&characterEncoding=UTF8&useSSL=false
+    username: root
+    password: 1234567890
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    show-sql: true
+  data:
+    elasticsearch:
+      cluster-name: docker-cluster
+      cluster-nodes: localhost:9300
+discovery:
+  zen:
+    ping:
+      multicast:
+        enabled: true
+logging:
+  config: classpath:logback-spring.xml
